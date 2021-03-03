@@ -1,5 +1,6 @@
 import requests
 import smtplib
+import time
 from bs4 import BeautifulSoup
 
 URL = 'https://www.amazon.in/Logitech-G102-Customizable-Lighting-Programmable/dp/B08LT9BMPP/ref=sr_1_3_mod_primary_lightning_deal?dchild=1&keywords=logitech+g102+lightsync+gaming+mouse&qid=1613138146&sbo=Tc8eqSFhUl4VwMzbE4fw%2Fw%3D%3D&smid=A14CZOWI0VEHLG&sr=8-3'
@@ -59,8 +60,9 @@ def sendmail(val):
     print('Email Sent!')
 
 
-fetch_val()
+while(1>0):
+    fetch_val()
 
-
+    time.sleep(86400)
 
 
