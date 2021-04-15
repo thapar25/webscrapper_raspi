@@ -3,8 +3,12 @@ import smtplib
 import time
 from bs4 import BeautifulSoup
 
+
+#//////////////////////////////////////////////////  Enter URL  /////////////////////////////////////////////////////////////////////////
+
 URL = 'https://www.amazon.in/Logitech-G102-Customizable-Lighting-Programmable/dp/B08LT9BMPP/ref=sr_1_3_mod_primary_lightning_deal?dchild=1&keywords=logitech+g102+lightsync+gaming+mouse&qid=1613138146&sbo=Tc8eqSFhUl4VwMzbE4fw%2Fw%3D%3D&smid=A14CZOWI0VEHLG&sr=8-3'
 
+#///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 headers = {
     "User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36'}
 
@@ -46,9 +50,9 @@ def change(val):
      file1.close()
 
 def sendmail(val):
-    email = '#your_email'
-    password = '#your_email_password'
-    send_to_email ='#recipient_email'
+    email = '#your_email'                                                                       # ENTER YOUR EMAIL (non-secured)
+    password = '#your_email_password'                                                           # ENTER PASSWORD TO THE ENTERED EMAIL
+    send_to_email ='#recipient_email'                                                           # RECIPIENT EMAIL
     message = 'The value dropped to INR :\t' + val + '\n\n\n'+'[Sent from Rasberry Pi]'
     server = smtplib.SMTP('smtp.gmail.com', 587)
     
