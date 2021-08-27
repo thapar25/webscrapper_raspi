@@ -1,4 +1,4 @@
-# webscrapper for raspi
+# webscrapper for raspi #
 
 The following project was made to keep track of an item on www.amazon.in
 The credit to the code goes to Dev Ed from Youtube.
@@ -16,7 +16,7 @@ For running the program at raspi bootup:
 
         python /home/pi/scrape.py &
         
-# keywords
-        BeautifulSoup4
-        SMTP
-        # RaspberryPi
+## keywords ##
+ > BeautifulSoup4
+ > SMTP
+ > RaspberryPi
