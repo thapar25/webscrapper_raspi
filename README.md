@@ -16,5 +16,7 @@ For running the program at raspi bootup:
 
         python /home/pi/scrape.py &
         
-#keywords
-        #BeautifulSoup4  #SMTP  #RaspberryPi
+# keywords
+        BeautifulSoup4
+        SMTP
+        # RaspberryPi
