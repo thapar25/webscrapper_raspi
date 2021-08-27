@@ -12,7 +12,7 @@ For running the program at raspi bootup:
         
         sudo nano /etc/rc.local
         
-(Scroll down, and just before the exit 0 line, enter the following:)
+(Scroll down, and just before the exit 0 line, enter the following code)
 
         python /home/pi/scrape.py &
         
